@@ -1,2 +1,2 @@
-./node_modules
-./$Recycle.Bin
+node_modules/
+$Recycle.Bin/
