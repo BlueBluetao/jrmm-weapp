@@ -6,13 +6,26 @@
       title="{{ item.title }}"
     >
       <view class="content">
-        {{ '内容' + item.title }}
+        <van-panel title="标题" desc="描述信息" status="状态" use-footer-slot>
+          <view>内容</view>
+          <view slot="footer">
+            <van-button size="small">按钮</van-button>
+            <van-button size="small" type="danger">按钮</van-button>
+          </view>
+        </van-panel>
+         <van-panel title="标题" desc="描述信息" status="状态" use-footer-slot>
+          <view>内容</view>
+          <view slot="footer">
+            <van-button size="small">按钮</van-button>
+            <van-button size="small" type="danger">按钮</van-button>
+          </view>
+        </van-panel>
       </view>
     </van-tab>
 </van-tabs>
 <van-tabbar active="{{ activeTarbar }}" bind:change="onChange">
-  <van-tabbar-item icon="search">金牌苗圃</van-tabbar-item>
-  <van-tabbar-item icon="search">经纪人</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">社区</van-tabbar-item>
+  <van-tabbar-item icon="shop-collect-o">金牌苗圃</van-tabbar-item>
+  <van-tabbar-item icon="manager-o">经纪人</van-tabbar-item>
+  <van-tabbar-item icon="orders-o">社区</van-tabbar-item>
 </van-tabbar>
 </view>
