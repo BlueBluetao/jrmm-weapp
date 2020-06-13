@@ -1,21 +1,26 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+page {
+  padding-bottom: 300px;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.content {
+  padding: 20px;
+  background-color: #fff;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.content-2 {
+  padding: 20px;
 }
 
-.usermotto {
-  margin-top: 200px;
+.right-nav {
+  padding: 0 10px;
+  line-height: 44px !important;
+  background-color: #fff;
+}
+
+.special-tab {
+  transition: all 0.25s ease-in-out;
+}
+
+.special-tab-active {
+  font-size: 1.05em !important;
 }

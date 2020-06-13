@@ -5,7 +5,16 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World',
+    active: 1,
+    activeTarbar: 0,
     userInfo: {},
+    tabs:[
+      {"title":"热门","id":"1"},
+      {"title":"推荐","id":"2"},
+      {"title":"苗木","id":"3"},
+      {"title":"草坪","id":"4"},
+      {"title":"防治","id":"5"}
+    ],
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
@@ -50,5 +59,11 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onChange(event) {
+    wx.showToast({
+      title: `切换到标签 ${event.detail.name}`,
+      icon: 'none',
+    });
   }
 })

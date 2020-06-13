@@ -4,11 +4,14 @@
     "pages/logs/logs"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText":"DEMO",
+    "navigationBarTextStyle":"black",
+    "navigationBarBackgroundColor":"#aa154e",
+    "enablePullDownRefresh":true,
+    "backgroundColor":"#ddd",
+    "backgroundTextStyle":"dark",
+    "onReachBottomDistance":15,
+    "navigationStyle":"custom"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
